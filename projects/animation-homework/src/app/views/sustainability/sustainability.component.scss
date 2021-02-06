@@ -1,0 +1,29 @@
+.c-animation-container{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.c-animation-options{
+  display: flex;
+  justify-content: space-around;
+}
+
+.c-animation-headline{
+  text-align: center;
+  align-self: center;
+  max-width: 27rem;
+
+  &__tittle{
+      display: flex;
+      flex-direction: column;
+      h1{
+          font-size: 3rem;
+          margin: 0;
+      }
+  }
+  p{
+      color: rgba(0,0,0,.67);
+  }
+
+}

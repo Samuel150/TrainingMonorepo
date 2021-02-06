@@ -1,0 +1,11 @@
+<div class="c-animation-options-element">
+  <img src={{iconLocation}}>
+  <div>
+      <div class="c-animation-button" (mouseover)="expandButton()" (mouseout)="shrinkButton()">
+          <button #button ><img src={{buttonIconLocation}}></button>
+          <div #bgButton class="c-animation-button"></div>
+      </div>
+      <h3>{{header}}</h3>
+      <p>{{paragraph}}</p>
+  </div>
+</div>

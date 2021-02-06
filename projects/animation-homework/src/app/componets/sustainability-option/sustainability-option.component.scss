@@ -1,0 +1,108 @@
+.c-animation-options-element{
+  display: flex;
+  align-items: center;
+  max-width: 15rem;
+
+  position: relative;
+
+  img{
+      width: 100px;
+  }
+      
+  div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+          text-align: center;
+          font-size: 15px;
+          font-weight: 600;
+          color: rgba(0,0,0,.67);
+      }
+      p{
+          color: rgba(0,0,0,.67);
+          font-weight: 200;
+      }
+  }
+}
+
+
+.c-animation-button{
+  button{  
+      border: none;
+      border-radius: 50%;
+      padding: 30px;
+      img{
+          width: 15px;
+      }
+  }
+
+  overflow: hidden;
+
+  &__bgTL{
+      border-radius: 50%;
+
+      position: absolute;
+
+      background-color: rgba(206,234,214);
+      width: 75px;
+      height: 78px;
+      z-index: -1;
+      
+      transition: background-color, transform 480ms cubic-bezier(.73,.06,.59,.85);
+      &--expand{
+          transform: scale(12,12) translateX(-15%) translateY(-25%);
+      }
+  }
+
+  &__bgTR{
+      border-radius: 50%;
+
+      position: absolute;
+
+      background-color: rgba(210,227,252);
+      width: 75px;
+      height: 78px;
+      z-index: -1;
+
+      transition: background-color, transform 480ms cubic-bezier(.73,.06,.59,.85);
+
+      &--expand{
+          transform: scale(12,12) translateX(-5%) translateY(-25%);
+      } 
+  }
+
+  &__bgBL{
+      border-radius: 50%;
+
+      position: absolute;
+
+      background-color:  rgba(255,239,195);
+      width: 75px;
+      height: 78px;
+      z-index: -1;
+
+      transition: background-color, transform 480ms cubic-bezier(.73,.06,.59,.85);
+
+      &--expand{
+          transform: scale(12,12) translateX(-5%) translateY(30%);
+      }
+  }
+
+  &__bgBR{
+      border-radius: 50%;
+
+      position: absolute;
+
+      background-color:  rgba(248,210,206);
+      width: 75px;
+      height: 78px;
+      z-index: -1;
+
+      transition: background-color, transform 480ms cubic-bezier(.73,.06,.59,.85);
+
+      &--expand{
+          transform: scale(12,12) translateX(-5%) translateY(30%);
+      }
+  }
+}
